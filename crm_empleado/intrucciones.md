@@ -18,7 +18,7 @@
 
     2 - Crear dos servicios, uno para empleados y otro para departamentos ✅ y vamos a crear un array datos para departamentos y para empleado 
             Departamentos: Marketing, Direccion, Cuentas y Desarrollo
-            Empleado: dos empleados uno Marketing y otro den Desarrollo los dos activos.
+            Empleado: dos empleados uno Marketing y otro de Desarrollo, los dos activos.
 
 
     3 - ¿ Que rutas necesito ?  ✅
