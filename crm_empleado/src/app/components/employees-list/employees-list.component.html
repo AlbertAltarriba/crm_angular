@@ -1,1 +1,41 @@
-<p>employees-list works!</p>
+<section class="container mt-3">
+    <h1>Lista de empleados</h1>
+    <hr>
+  
+    <div class="row g-4 mt-3">
+  
+      <article class="col-12 col-md-6 col-lg-3" *ngFor="let empleado of empleados">
+        <div class="card p-4 active" *ngIf="empleado.status; else bloqueElse">
+            <div>
+                <img src={{empleado.photo}} alt="">
+                <h4>{{empleado.name}} {{empleado.surname}}</h4>
+                <p>{{empleado.dni}}</p>
+                <p>{{empleado.email}}</p>
+                <p>{{empleado.department}}</p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-success" >Activo</button>
+                <button class="btn btn-dark" [routerLink]="['/employee', empleado.id ]">Detalle</button>
+            </div>
+        </div>
+
+        <ng-template #bloqueElse>
+            <div class="card p-4 inactive" >
+                <div>
+                    <img src={{empleado.photo}} alt="">
+                    <h4>{{empleado.name}} {{empleado.surname}}</h4>
+                    <p>{{empleado.dni}}</p>
+                    <p>{{empleado.email}}</p>
+                    <p>{{empleado.department}}</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-danger" >Inactivo</button>
+                    <button class="btn btn-dark" disabled [routerLink]="['/employee', 2]">Detalle</button>
+                </div>
+            </div>
+        </ng-template>
+      </article>
+  
+    </div>
+  
+  </section>

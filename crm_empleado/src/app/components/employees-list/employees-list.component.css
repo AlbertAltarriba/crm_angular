@@ -1,0 +1,26 @@
+
+
+article{
+    height: 500px;
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+.card{
+    justify-content: space-between;
+}
+.active{
+    height: 300px;
+    border: 2px solid green;
+}
+
+.inactive{
+    height: 300px;
+    border: 2px solid tomato;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

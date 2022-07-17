@@ -20,7 +20,7 @@ export const EMPLEADOS: Empleado[] = [
         email: 'pepito@gmail.com',
         photo: '',
         department: 'Marketing',
-        status: true
+        status: false
     }
 
 ]

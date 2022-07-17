@@ -11,4 +11,8 @@ export class EmpleadosService {
   constructor() { 
     this.arrEmpleados = EMPLEADOS
   }
+
+  getAll() : Empleado[]{
+    return this.arrEmpleados;
+  }
 }
